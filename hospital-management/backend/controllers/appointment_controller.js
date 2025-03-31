@@ -8,7 +8,7 @@ exports.createAppointment = async (req, res) => {
         res.status(400).json({ error: error.message });
     }
 };
-
+//ADD new comment
 exports.getAllAppointments = async (req, res) => {
     try {
         const appointments = await Appointment.find();
